@@ -66,25 +66,22 @@ body {
 .dropdown:hover .dropbtn {background-color: aqua;}
 
 
-button {
-    background: lightblue;
-    border: 2px solid black;
-    border-radius: 2rem;
-    padding: 0.5rem;
-    min-width: 60px;
-    margin: 8px;
-    box-shadow: 2px 2px darkgray;
-  }
-  button a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
-  }
-  button:hover {
-    background-color: rgb(100, 255, 255);
-    box-shadow: 3px 3px darkgray;
-  }
+button{
+  background: transparent;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  padding: 1rem;
+  min-width: 180px;
+  z-index: 20;
+}
+button a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+}
 
   .fadeDivContainer {
     display: flex;
