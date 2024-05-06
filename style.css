@@ -24,6 +24,7 @@ body {
     flex-flow: row wrap;
     justify-content:flex-end;
     align-items: flex-end;
+    height: 4rem;    
     background-color: whitesmoke;
     border-bottom: 2px solid black;
 }
@@ -31,6 +32,7 @@ body {
 #dropbtn {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 0.5rem;
+  height: 4rem;
   min-width: 60px;
   font-size: 20px;
   margin-right: 4rem;
@@ -78,7 +80,7 @@ button{
 }
 button a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: black;
 }
