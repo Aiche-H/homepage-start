@@ -33,6 +33,7 @@ body {
   padding: 0.5rem;
   min-width: 60px;
   font-size: 20px;
+  margin-right: 4rem;
 }
 
 .dropdown {
@@ -85,16 +86,74 @@ button {
     box-shadow: 3px 3px darkgray;
   }
 
-
-  .div1 {
-    width: 80vw;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 10vw;
-
+  .fadeDivContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .fadeInLeft {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    background-color: rgb(212, 244, 255);
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-width: 400px;
+    margin-left: 2vw;
+    margin-right: 35vw;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    padding: 0.5rem;
+    animation: fadeInL 1s ease-in-out;
+    animation-play-state: paused;
   }
 
+  .fadeInLeft.in-view {
+    animation-play-state: running;
+  }
+
+  @keyframes fadeInL {
+    from {
+      margin-right: 1vw;
+      opacity: 0;
+    }
+    to {
+      margin-right: 35vw;
+      opacity: 1;
+    }
+  }
+ 
+
+  .fadeInRight {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    background-color: rgb(212, 244, 255);
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-width: 400px;
+    margin-right: 2vw;
+    margin-left: 35vw;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    padding: 0.5rem;
+    animation: fadeInR 1s ease-in-out;
+    animation-play-state: paused;
+} 
+
+.fadeInRight.in-view {
+  animation-play-state: running;
+}
+
+@keyframes fadeInR {
+    from {
+      margin-left: 1vw;
+      opacity: 0;
+    }
+    to {
+      margin-left: 35vw;
+      opacity: 1;
+    }
+  }
 
 
 footer {
